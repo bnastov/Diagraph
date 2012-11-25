@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tp3:LivreRecettes xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tp3="http:///tp3-v0">
+  <recettes name="Steack Frites" origineRegionale="//@departements.0">
+    <composes quantite="2" _ingredient="//@ingredients.0"/>
+    <composes quantite="15" _ingredient="//@ingredients.1"/>
+    <vins name="Jullieans" prix="150.0" _vin="//@vins.0"/>
+    <vins name="Bouteille 2" prix="80.0" _vin="//@vins.0"/>
+  </recettes>
+  <ingredients name="Steak" prix="10.0"/>
+  <ingredients name="Pomme de terre" prix="5.0"/>
+  <departements name="Montpellier"/>
+  <vins name="Vin1"/>
+</tp3:LivreRecettes>

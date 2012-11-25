@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/24/trunk/aigle.idm.diagraph.tp3/model
+END
+tp3.genmodel
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/24/trunk/aigle.idm.diagraph.tp3/model/tp3.genmodel
+END
+tp3.ecorediag
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/24/trunk/aigle.idm.diagraph.tp3/model/tp3.ecorediag
+END
+tp3.ecore
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/24/trunk/aigle.idm.diagraph.tp3/model/tp3.ecore
+END

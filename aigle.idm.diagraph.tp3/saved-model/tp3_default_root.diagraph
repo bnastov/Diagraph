@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagraph:DGraph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagraph="http://isoe-2012-diagraph-dsml" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" rootPointOfView="//@nodes.0">
+  <nodes xsi:type="diagraph:DPointOfView" name="LivreRecettes" viewName="default_root">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp3.ecore#//LivreRecettes"/>
+    <eClass href="tp3.ecore#//LivreRecettes"/>
+  </nodes>
+  <nodes xsi:type="diagraph:DPointOfView" name="Recette" owner="//@nodes.0" viewName="default_root" parent="//@nodes.0">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp3.ecore#//Recette"/>
+    <eClass href="tp3.ecore#//Recette"/>
+    <labelAttribute href="tp3.ecore#//Named/name"/>
+    <edges xsi:type="diagraph:DLink" name="Compose" owner="//@nodes.1" target="//@nodes.2" source="//@nodes.1">
+      <roleInCsGraph xsi:type="ecore:EClass" href="tp3.ecore#//Compose"/>
+      <targetReference href="tp3.ecore#//Compose/_ingredient"/>
+      <eClass href="tp3.ecore#//Compose"/>
+      <labelAttribute href="tp3.ecore#//Compose/quantite"/>
+    </edges>
+    <edges xsi:type="diagraph:DReference" name="origineRegionale" target="//@nodes.4" source="//@nodes.1">
+      <roleInCsGraph xsi:type="ecore:EReference" href="tp3.ecore#//Recette/origineRegionale"/>
+      <targetReference href="tp3.ecore#//Recette/origineRegionale"/>
+    </edges>
+    <edges xsi:type="diagraph:DPartitioningNestingEdge" name="vins" owner="//@nodes.1" target="//@nodes.5" source="//@nodes.1" partitionName="vins">
+      <roleInCsGraph xsi:type="ecore:EReference" href="tp3.ecore#//Recette/vins"/>
+      <targetReference href="tp3.ecore#//Recette/vins"/>
+    </edges>
+    <navs>ingredient_root</navs>
+  </nodes>
+  <nodes name="Ingredient" owner="//@nodes.0">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp3.ecore#//Ingredient"/>
+    <eClass href="tp3.ecore#//Ingredient"/>
+    <labelAttribute href="tp3.ecore#//ValuedNamed/prix"/>
+  </nodes>
+  <nodes name="Vin" owner="//@nodes.0">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp3.ecore#//Vin"/>
+    <eClass href="tp3.ecore#//Vin"/>
+    <labelAttribute href="tp3.ecore#//Named/name"/>
+  </nodes>
+  <nodes name="Localisation" owner="//@nodes.0">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp3.ecore#//Localisation"/>
+    <eClass href="tp3.ecore#//Localisation"/>
+    <labelAttribute href="tp3.ecore#//Named/name"/>
+  </nodes>
+  <nodes name="Bouteille" owner="//@nodes.1">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp3.ecore#//Bouteille"/>
+    <eClass href="tp3.ecore#//Bouteille"/>
+    <labelAttribute href="tp3.ecore#//ValuedNamed/prix"/>
+    <edges xsi:type="diagraph:DReference" name="_vin" target="//@nodes.3" source="//@nodes.5">
+      <roleInCsGraph xsi:type="ecore:EReference" href="tp3.ecore#//Bouteille/_vin"/>
+      <targetReference href="tp3.ecore#//Bouteille/_vin"/>
+    </edges>
+  </nodes>
+</diagraph:DGraph>

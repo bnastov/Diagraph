@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmftool:ToolRegistry xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette title="default">
+    <tools xsi:type="gmftool:ToolGroup" title="default">
+      <tools xsi:type="gmftool:PaletteSeparator" title="Nodes" description="Nodes"/>
+      <tools xsi:type="gmftool:CreationTool" title="Recette" description="Model Element: Recette">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/Recette.gif" bundle="aigle.idm.diagraph.tp3"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:CreationTool" title="Ingredient" description="Model Element: Ingredient">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/Ingredient.gif" bundle="aigle.idm.diagraph.tp3"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:CreationTool" title="Vin" description="Model Element: Vin">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/Vin.gif" bundle="aigle.idm.diagraph.tp3"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:CreationTool" title="Localisation" description="Model Element: Localisation">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/Localisation.gif" bundle="aigle.idm.diagraph.tp3"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:PaletteSeparator" title="Compartmented nodes" description="Compartmented nodes"/>
+      <tools xsi:type="gmftool:CreationTool" title="Bouteille" description="Model Element: Bouteille">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/Bouteille.gif" bundle="aigle.idm.diagraph.tp3"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:PaletteSeparator" title="Links" description="Links"/>
+      <tools xsi:type="gmftool:CreationTool" title="Compose" description="Recette->Ingredient">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/Compose.gif" bundle="aigle.idm.diagraph.tp3"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:PaletteSeparator" title="References" description="References"/>
+      <tools xsi:type="gmftool:CreationTool" title="origineRegionale" description="Recette->Localisation">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/origineRegionale.gif" bundle="aigle.idm.diagraph.tp3"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:CreationTool" title="_vin" description="Bouteille->Vin">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/_vin.gif" bundle="aigle.idm.diagraph.tp3"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

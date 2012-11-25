@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dgi:DConcreteSyntax xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dgi="http://dgi.isoe.org" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore">
+  <dNodes name="LivreRecettes" root="true">
+    <eModelElement xsi:type="ecore:EClass" href="tp3.ecore#//LivreRecettes"/>
+  </dNodes>
+  <dNodes name="Recette" dReferences="//@dEdges.1" dContainments="//@dEdges.3" dLinks="//@dEdges.0">
+    <dLabels name="RecetteName" fromSuperElement="true">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp3.ecore#//Named/name"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp3.ecore#//LivreRecettes/recettes"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp3.ecore#//Recette"/>
+  </dNodes>
+  <dNodes name="Ingredient">
+    <dLabels name="IngredientName" fromSuperElement="true">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp3.ecore#//Named/name"/>
+    </dLabels>
+    <dLabels name="IngredientPrix" fromSuperElement="true">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp3.ecore#//ValuedNamed/prix"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp3.ecore#//LivreRecettes/ingredients"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp3.ecore#//Ingredient"/>
+  </dNodes>
+  <dNodes name="Vin">
+    <dLabels name="VinName" fromSuperElement="true">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp3.ecore#//Named/name"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp3.ecore#//LivreRecettes/vins"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp3.ecore#//Vin"/>
+  </dNodes>
+  <dNodes name="Localisation">
+    <dLabels name="LocalisationName" fromSuperElement="true">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp3.ecore#//Named/name"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp3.ecore#//LivreRecettes/departements"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp3.ecore#//Localisation"/>
+  </dNodes>
+  <dNodes name="Bouteille" dReferences="//@dEdges.2">
+    <dLabels name="BouteilleName" fromSuperElement="true">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp3.ecore#//Named/name"/>
+    </dLabels>
+    <dLabels name="BouteillePrix" fromSuperElement="true">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp3.ecore#//ValuedNamed/prix"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp3.ecore#//Recette/vins"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp3.ecore#//Bouteille"/>
+  </dNodes>
+  <dElements name="Named">
+    <eModelElement xsi:type="ecore:EClass" href="tp3.ecore#//Named"/>
+  </dElements>
+  <dElements name="ValuedNamed">
+    <eModelElement xsi:type="ecore:EClass" href="tp3.ecore#//ValuedNamed"/>
+  </dElements>
+  <dEdges xsi:type="dgi:DLink" name="Compose" dSourceNode="//@dNodes.1" dTargetNode="//@dNodes.2">
+    <dLabels name="ComposeQuantite">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp3.ecore#//Compose/quantite"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp3.ecore#//Recette/composes"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp3.ecore#//Compose"/>
+    <eTargetModelElement xsi:type="ecore:EReference" href="tp3.ecore#//Compose/_ingredient"/>
+  </dEdges>
+  <dEdges xsi:type="dgi:DPoorReference" dSourceNode="//@dNodes.1" dTargetNode="//@dNodes.4" name="origineRegionale">
+    <eTargetModelElement xsi:type="ecore:EReference" href="tp3.ecore#//Recette/origineRegionale"/>
+  </dEdges>
+  <dEdges xsi:type="dgi:DPoorReference" dSourceNode="//@dNodes.5" dTargetNode="//@dNodes.3" name="_vin">
+    <eTargetModelElement xsi:type="ecore:EReference" href="tp3.ecore#//Bouteille/_vin"/>
+  </dEdges>
+  <dEdges xsi:type="dgi:DContainment" name="vins" dSourceNode="//@dNodes.1" dTargetNode="//@dNodes.5" compartment="true"/>
+</dgi:DConcreteSyntax>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tp4:Infrastructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tp4="http:///tp4-v0">
+  <calculateurs name="Pilotage">
+    <interfaces name="i001" cadence="100.0" _peripherique="//@peripheriques.0" calculateur="//@calculateurs.0"/>
+    <interfaces name="i002" cadence="100.0" _peripherique="//@peripheriques.1" calculateur="//@calculateurs.0"/>
+    <interfaces name="i003" cadence="50.0" _peripherique="//@peripheriques.2" calculateur="//@calculateurs.0"/>
+    <interfaces name="i004" cadence="50.0" _peripherique="//@peripheriques.3" calculateur="//@calculateurs.0"/>
+    <processeurs name="i586" _famille="//@documentation/@familles.0"/>
+    <processeurs name="x95" _famille="//@documentation/@familles.0">
+      <trace t_nomenclature="//@documentation/@nomenclatures.0" date_heure="13/11"/>
+    </processeurs>
+  </calculateurs>
+  <calculateurs name="Gection Moteur">
+    <interfaces name="i005" cadence="20.0" _peripherique="//@peripheriques.3" calculateur="//@calculateurs.1"/>
+    <processeurs name="Z80"/>
+  </calculateurs>
+  <calculateurs name="Pression Cabine">
+    <trace t_nomenclature="//@documentation/@nomenclatures.0" date_heure="1211"/>
+    <interfaces name="i006" cadence="20.0" _peripherique="//@peripheriques.4" calculateur="//@calculateurs.2"/>
+    <processeurs name="68000" _famille="//@documentation/@familles.1"/>
+  </calculateurs>
+  <peripheriques name="Capteur Altitude" nature="entree"/>
+  <peripheriques name="Capteur Vitesse" nature="entree"/>
+  <peripheriques name="Architecture XYZ"/>
+  <peripheriques name="Architecture Carburant"/>
+  <peripheriques name="Capteur Pression">
+    <trace t_nomenclature="//@documentation/@nomenclatures.1" date_heure="14/11"/>
+  </peripheriques>
+  <localisations name="Loc 1" coteX="41" coteY="56"/>
+  <localisations name="Loc 2" coteX="785" coteY="8421"/>
+  <localisations name="Loc 3" coteX="120" coteY="155"/>
+  <localisations name="Loc 4" coteX="78" coteY="144"/>
+  <documentation name="Documentation">
+    <familles nom="intel">
+      <docus description="technique"/>
+      <docus description="foobar"/>
+      <docus description="barfoo"/>
+    </familles>
+    <familles nom="motorola">
+      <docus description="bar"/>
+      <docus description="baz"/>
+    </familles>
+    <nomenclatures name="nomenclb"/>
+    <nomenclatures name="nomencla">
+      <zlocalisation cordZ="87" localisation="//@localisations.3"/>
+    </nomenclatures>
+    <nomenclatures name="nomencl 999">
+      <zlocalisation cordZ="22" localisation="//@localisations.0"/>
+    </nomenclatures>
+    <nomenclatures name="nomenc c410">
+      <zlocalisation cordZ="956" localisation="//@localisations.1"/>
+    </nomenclatures>
+  </documentation>
+</tp4:Infrastructure>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="LivreRecettesCanvas">
+  <figures name="default">
+    <figures xsi:type="gmfgraph:PolylineDecoration">
+      <template x="-2" y="-2"/>
+      <template/>
+      <template x="-2" y="2"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration">
+      <template x="-2" y="-2"/>
+      <template/>
+      <template x="-2" y="2"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration">
+      <template x="-2" y="-2"/>
+      <template/>
+      <template x="-2" y="2"/>
+    </figures>
+    <descriptors name="RecetteFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="RecetteFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="orange"/>
+        <children xsi:type="gmfgraph:Label" name="RecetteNameFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="vinsFigure">
+          <backgroundColor xsi:type="gmfgraph:ConstantColor" value="lightBlue"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="IngredientFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="IngredientFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="yellow"/>
+        <children xsi:type="gmfgraph:Label" name="IngredientPrixFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="VinFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="VinFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+        <children xsi:type="gmfgraph:Label" name="VinNameFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="LocalisationFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="LocalisationFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="lightGreen"/>
+        <children xsi:type="gmfgraph:Label" name="LocalisationNameFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="BouteilleFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="BouteilleFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+        <children xsi:type="gmfgraph:Label" name="BouteillePrixFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ComposeFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ComposePolylineConnection" targetDecoration="//@figures.0/@figures.0">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="darkGreen"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="ComposeQuantiteFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ComposeQuantiteFigure">
+        <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="origineRegionaleFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="origineRegionalePolylineConnection" targetDecoration="//@figures.0/@figures.1">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="_vinFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="_vinPolylineConnection" targetDecoration="//@figures.0/@figures.2">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+  </figures>
+  <nodes name="Recette" figure="RecetteFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize/>
+    </facets>
+  </nodes>
+  <nodes name="Ingredient" figure="IngredientFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize/>
+    </facets>
+  </nodes>
+  <nodes name="Vin" figure="VinFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize/>
+    </facets>
+  </nodes>
+  <nodes name="Localisation" figure="LocalisationFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize/>
+    </facets>
+  </nodes>
+  <nodes name="Bouteille" figure="BouteilleFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize/>
+    </facets>
+  </nodes>
+  <connections name="Compose" figure="ComposeFigure"/>
+  <connections name="origineRegionale" figure="origineRegionaleFigure"/>
+  <connections name="_vin" figure="_vinFigure"/>
+  <compartments name="vins" figure="RecetteFigure" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
+  <labels name="RecetteName" figure="RecetteFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="ComposeQuantite" figure="ComposeQuantiteFigure"/>
+  <labels name="IngredientPrix" figure="IngredientFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="VinName" figure="VinFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="LocalisationName" figure="LocalisationFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="BouteillePrix" figure="BouteilleFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+</gmfgraph:Canvas>

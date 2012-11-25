@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dgi:DConcreteSyntax xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dgi="http://dgi.isoe.org" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore">
+  <dNodes name="Infrastructure" root="true">
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//Infrastructure"/>
+  </dNodes>
+  <dNodes name="Calculateur" dContainments="//@dEdges.5" dLinks="//@dEdges.0">
+    <dLabels name="CalculateurName">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//ElementEmbarque/name"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp4.ecore#//Infrastructure/calculateurs"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//Calculateur"/>
+  </dNodes>
+  <dNodes name="Peripherique">
+    <dLabels name="PeripheriqueName">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//ElementEmbarque/name"/>
+    </dLabels>
+    <dLabels name="PeripheriqueNature">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//Peripherique/nature"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp4.ecore#//Infrastructure/peripheriques"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//Peripherique"/>
+  </dNodes>
+  <dNodes name="Nomenclature" dLinks="//@dEdges.2">
+    <dLabels name="NomenclatureName">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//Nomenclature/name"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp4.ecore#//VueDocumentation/nomenclatures"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//Nomenclature"/>
+  </dNodes>
+  <dNodes name="Famille" dContainments="//@dEdges.6">
+    <dLabels name="FamilleNom">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//Famille/nom"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp4.ecore#//VueDocumentation/familles"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//Famille"/>
+  </dNodes>
+  <dNodes name="Localisation">
+    <dLabels name="LocalisationName">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//Localisation/name"/>
+    </dLabels>
+    <dLabels name="LocalisationCoteX">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//Localisation/coteX"/>
+    </dLabels>
+    <dLabels name="LocalisationCoteY">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//Localisation/coteY"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp4.ecore#//Infrastructure/localisations"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//Localisation"/>
+  </dNodes>
+  <dNodes name="Documentation">
+    <dLabels name="DocumentationDescription">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//Documentation/description"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp4.ecore#//Famille/docus"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//Documentation"/>
+  </dNodes>
+  <dNodes name="VueDocumentation" dContainments="//@dEdges.7 //@dEdges.8">
+    <dLabels name="VueDocumentationName">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//VueDocumentation/name"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp4.ecore#//Infrastructure/documentation"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//VueDocumentation"/>
+  </dNodes>
+  <dNodes name="Processeur" dReferences="//@dEdges.4" dLinks="//@dEdges.1 //@dEdges.3">
+    <dLabels name="ProcesseurName">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//ElementEmbarque/name"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp4.ecore#//Calculateur/processeurs"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//Processeur"/>
+  </dNodes>
+  <dElements name="ElementEmbarque">
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//ElementEmbarque"/>
+  </dElements>
+  <dEdges xsi:type="dgi:DLink" name="Interface" dSourceNode="//@dNodes.1" dTargetNode="//@dNodes.2">
+    <dLabels name="InterfaceName" fromSuperElement="true">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//ElementEmbarque/name"/>
+    </dLabels>
+    <dLabels name="InterfaceCadence" fromSuperElement="true">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//ElementEmbarque/cadence"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp4.ecore#//Calculateur/interfaces"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//Interface"/>
+    <eSourceModelElement xsi:type="ecore:EReference" href="tp4.ecore#//Interface/calculateur"/>
+    <eTargetModelElement xsi:type="ecore:EReference" href="tp4.ecore#//Interface/_peripherique"/>
+  </dEdges>
+  <dEdges xsi:type="dgi:DLink" name="Trace" dSourceNode="//@dNodes.8" dTargetNode="//@dNodes.3">
+    <dLabels name="TraceDate_heure">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//Trace/date_heure"/>
+    </dLabels>
+    <dLabels name="TraceDate_heure">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//Trace/date_heure"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp4.ecore#//ElementEmbarque/trace"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//Trace"/>
+    <eTargetModelElement xsi:type="ecore:EReference" href="tp4.ecore#//Trace/t_nomenclature"/>
+  </dEdges>
+  <dEdges xsi:type="dgi:DLink" name="ZLocalisation" dSourceNode="//@dNodes.3" dTargetNode="//@dNodes.5">
+    <dLabels name="ZLocalisationCordZ">
+      <eAttributeModelElement xsi:type="ecore:EAttribute" href="tp4.ecore#//ZLocalisation/cordZ"/>
+    </dLabels>
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp4.ecore#//Nomenclature/zlocalisation"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//ZLocalisation"/>
+    <eTargetModelElement xsi:type="ecore:EReference" href="tp4.ecore#//ZLocalisation/localisation"/>
+  </dEdges>
+  <dEdges xsi:type="dgi:DLink" name="Trace" dSourceNode="//@dNodes.8" dTargetNode="//@dNodes.3">
+    <eContainmentModelElement xsi:type="ecore:EReference" href="tp4.ecore#//ElementEmbarque/trace"/>
+    <eModelElement xsi:type="ecore:EClass" href="tp4.ecore#//Trace"/>
+    <eTargetModelElement xsi:type="ecore:EReference" href="tp4.ecore#//Trace/t_nomenclature"/>
+  </dEdges>
+  <dEdges xsi:type="dgi:DPoorReference" dSourceNode="//@dNodes.8" dTargetNode="//@dNodes.4" name="_famille">
+    <eTargetModelElement xsi:type="ecore:EReference" href="tp4.ecore#//Processeur/_famille"/>
+  </dEdges>
+  <dEdges xsi:type="dgi:DContainment" name="processeurs" dSourceNode="//@dNodes.1" dTargetNode="//@dNodes.8" compartment="true"/>
+  <dEdges xsi:type="dgi:DContainment" name="docus" dSourceNode="//@dNodes.4" dTargetNode="//@dNodes.6" compartment="true"/>
+  <dEdges xsi:type="dgi:DContainment" name="familles" dSourceNode="//@dNodes.7" dTargetNode="//@dNodes.4" compartment="true"/>
+  <dEdges xsi:type="dgi:DContainment" name="nomenclatures" dSourceNode="//@dNodes.7" dTargetNode="//@dNodes.3" compartment="true"/>
+</dgi:DConcreteSyntax>

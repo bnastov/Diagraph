@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="InfrastructureCanvas">
+  <figures name="default">
+    <figures xsi:type="gmfgraph:PolylineDecoration">
+      <template x="-2" y="-2"/>
+      <template/>
+      <template x="-2" y="2"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration">
+      <template x="-2" y="-2"/>
+      <template/>
+      <template x="-2" y="2"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration">
+      <template x="-2" y="-2"/>
+      <template/>
+      <template x="-2" y="2"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration">
+      <template x="-2" y="-2"/>
+      <template/>
+      <template x="-2" y="2"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration">
+      <template x="-2" y="-2"/>
+      <template/>
+      <template x="-2" y="2"/>
+    </figures>
+    <descriptors name="CalculateurFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="CalculateurFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="orange"/>
+        <children xsi:type="gmfgraph:Label" name="CalculateurNameFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="processeursFigure">
+          <backgroundColor xsi:type="gmfgraph:ConstantColor" value="yellow"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="PeripheriqueFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="PeripheriqueFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="lightBlue"/>
+        <children xsi:type="gmfgraph:Label" name="PeripheriqueNameFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+        <children xsi:type="gmfgraph:Label" name="PeripheriqueNatureFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="NomenclatureFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="NomenclatureFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+        <children xsi:type="gmfgraph:Label" name="NomenclatureNameFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="FamilleFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="FamilleFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="green"/>
+        <children xsi:type="gmfgraph:Label" name="FamilleNomFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="docusFigure">
+          <backgroundColor xsi:type="gmfgraph:ConstantColor" value="lightGreen"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="LocalisationFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="LocalisationFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="cyan"/>
+        <children xsi:type="gmfgraph:Label" name="LocalisationNameFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+        <children xsi:type="gmfgraph:Label" name="LocalisationCoteXFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+        <children xsi:type="gmfgraph:Label" name="LocalisationCoteYFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="DocumentationFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="DocumentationFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="darkGreen"/>
+        <children xsi:type="gmfgraph:Label" name="DocumentationDescriptionFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="VueDocumentationFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="VueDocumentationFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+        <children xsi:type="gmfgraph:Label" name="VueDocumentationNameFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="famillesFigure">
+          <backgroundColor xsi:type="gmfgraph:ConstantColor" value="gray"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="nomenclaturesFigure">
+          <backgroundColor xsi:type="gmfgraph:ConstantColor" value="lightGray"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.6/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.6/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="ProcesseurFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ProcesseurFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="green"/>
+        <children xsi:type="gmfgraph:Label" name="ProcesseurNameFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.7/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="InterfaceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="InterfacePolylineConnection" targetDecoration="//@figures.0/@figures.0">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="red"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TraceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="TracePolylineConnection" targetDecoration="//@figures.0/@figures.1">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="darkBlue"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="ZLocalisationFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ZLocalisationPolylineConnection" targetDecoration="//@figures.0/@figures.2">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TraceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="TracePolylineConnection" targetDecoration="//@figures.0/@figures.3">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="darkBlue"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="InterfaceNameFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="InterfaceNameFigure">
+        <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="InterfaceCadenceFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="InterfaceCadenceFigure">
+        <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TraceDate_heureFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TraceDate_heureFigure">
+        <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="ZLocalisationCordZFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ZLocalisationCordZFigure">
+        <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TraceDate_heureFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TraceDate_heureFigure">
+        <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="_familleFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="_famillePolylineConnection" targetDecoration="//@figures.0/@figures.4">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="orange"/>
+      </actualFigure>
+    </descriptors>
+  </figures>
+  <nodes name="Calculateur" figure="CalculateurFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize/>
+    </facets>
+  </nodes>
+  <nodes name="Peripherique" figure="PeripheriqueFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize/>
+    </facets>
+  </nodes>
+  <nodes name="Nomenclature" figure="NomenclatureFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize/>
+    </facets>
+  </nodes>
+  <nodes name="Famille" figure="FamilleFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize/>
+    </facets>
+  </nodes>
+  <nodes name="Localisation" figure="LocalisationFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize/>
+    </facets>
+  </nodes>
+  <nodes name="Documentation" figure="DocumentationFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize/>
+    </facets>
+  </nodes>
+  <nodes name="VueDocumentation" figure="VueDocumentationFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize/>
+    </facets>
+  </nodes>
+  <nodes name="Processeur" figure="ProcesseurFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize/>
+    </facets>
+  </nodes>
+  <connections name="Interface" figure="InterfaceFigure"/>
+  <connections name="Trace" figure="TraceFigure"/>
+  <connections name="ZLocalisation" figure="ZLocalisationFigure"/>
+  <connections name="Trace" figure="TraceFigure"/>
+  <connections name="_famille" figure="_familleFigure"/>
+  <compartments name="processeurs" figure="CalculateurFigure" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
+  <compartments name="docus" figure="FamilleFigure" accessor="//@figures.0/@descriptors.3/@accessors.1"/>
+  <compartments name="familles" figure="VueDocumentationFigure" accessor="//@figures.0/@descriptors.6/@accessors.1"/>
+  <compartments name="nomenclatures" figure="VueDocumentationFigure" accessor="//@figures.0/@descriptors.6/@accessors.2"/>
+  <labels name="CalculateurName" figure="CalculateurFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="InterfaceName" figure="InterfaceNameFigure"/>
+  <labels name="InterfaceCadence" figure="InterfaceCadenceFigure"/>
+  <labels name="PeripheriqueName" figure="PeripheriqueFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="PeripheriqueNature" figure="PeripheriqueFigure" accessor="//@figures.0/@descriptors.1/@accessors.1"/>
+  <labels name="TraceDate_heure" figure="TraceDate_heureFigure"/>
+  <labels name="NomenclatureName" figure="NomenclatureFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="ZLocalisationCordZ" figure="ZLocalisationCordZFigure"/>
+  <labels name="FamilleNom" figure="FamilleFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="LocalisationName" figure="LocalisationFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+  <labels name="LocalisationCoteX" figure="LocalisationFigure" accessor="//@figures.0/@descriptors.4/@accessors.1"/>
+  <labels name="LocalisationCoteY" figure="LocalisationFigure" accessor="//@figures.0/@descriptors.4/@accessors.2"/>
+  <labels name="DocumentationDescription" figure="DocumentationFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+  <labels name="VueDocumentationName" figure="VueDocumentationFigure" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
+  <labels name="ProcesseurName" figure="ProcesseurFigure" accessor="//@figures.0/@descriptors.7/@accessors.0"/>
+  <labels name="TraceDate_heure" figure="TraceDate_heureFigure"/>
+</gmfgraph:Canvas>

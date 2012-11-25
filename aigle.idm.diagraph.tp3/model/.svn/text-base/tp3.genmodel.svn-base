@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/aigle.idm.diagraph.tp3/src/" editDirectory="/aigle.idm.diagraph.tp3.edit/src/" modelPluginID="aigle.idm.diagraph.tp3" modelName="Tp3" complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.7">
+  <genPackages prefix="Tp3" basePackage="aigle.idm.diagraph" disposableProviderFactory="true">
+    <ecorePackage href="tp3.ecore#/"/>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="tp3.ecore#//Cout"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="tp3.ecore#//Cout/faible"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="tp3.ecore#//Cout/moyen"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="tp3.ecore#//Cout/eleve"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="tp3.ecore#//Nature"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="tp3.ecore#//Nature/legume"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="tp3.ecore#//Nature/viande"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="tp3.ecore#//Nature/poisson"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="tp3.ecore#//Nature/condiment"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="tp3.ecore#//Nature/fruit"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="tp3.ecore#//Nature/feculent"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="tp3.ecore#//Nature/oeuf"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="tp3.ecore#//Nature/matiereGrasse"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genClasses>
+      <ecoreClass href="tp3.ecore#//LivreRecettes"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="tp3.ecore#//LivreRecettes/recettes"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="tp3.ecore#//LivreRecettes/ingredients"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="tp3.ecore#//LivreRecettes/departements"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="tp3.ecore#//LivreRecettes/vins"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="tp3.ecore#//Recette"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="tp3.ecore#//Recette/nom"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="tp3.ecore#//Recette/cout"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="tp3.ecore#//Recette/composes"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="tp3.ecore#//Recette/origineRegionale"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="tp3.ecore#//Recette/vins"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="tp3.ecore#//Ingredient"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="tp3.ecore#//Ingredient/name"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="tp3.ecore#//Ingredient/nature"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="tp3.ecore#//Ingredient/prix"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="tp3.ecore#//Vin"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="tp3.ecore#//Vin/nom"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="tp3.ecore#//Compose"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="tp3.ecore#//Compose/name"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="tp3.ecore#//Compose/quantite"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="tp3.ecore#//Compose/_ingredient"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="tp3.ecore#//Localisation"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="tp3.ecore#//Localisation/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="tp3.ecore#//Bouteille"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="tp3.ecore#//Bouteille/_vin"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="tp3.ecore#//Bouteille/nom"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="tp3.ecore#//Bouteille/prix"/>
+      </genFeatures>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagraph:DGraph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagraph="http://isoe-2012-diagraph-dsml" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" rootPointOfView="//@nodes.0">
+  <nodes xsi:type="diagraph:DPointOfView" name="Infrastructure" viewName="default_root">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp4.ecore#//Infrastructure"/>
+    <eClass href="tp4.ecore#//Infrastructure"/>
+  </nodes>
+  <nodes name="Calculateur" owner="//@nodes.0">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp4.ecore#//Calculateur"/>
+    <eClass href="tp4.ecore#//Calculateur"/>
+    <labelAttribute href="tp4.ecore#//ElementEmbarque/name"/>
+    <edges xsi:type="diagraph:DLink" name="Interface" owner="//@nodes.1" target="//@nodes.2" source="//@nodes.1">
+      <roleInCsGraph xsi:type="ecore:EClass" href="tp4.ecore#//Interface"/>
+      <targetReference href="tp4.ecore#//Interface/_peripherique"/>
+      <eClass href="tp4.ecore#//Interface"/>
+      <labelAttribute href="tp4.ecore#//ElementEmbarque/cadence"/>
+      <sourceReference href="tp4.ecore#//Interface/calculateur"/>
+    </edges>
+    <edges xsi:type="diagraph:DPartitioningNestingEdge" name="processeurs" owner="//@nodes.1" target="//@nodes.8" source="//@nodes.1" partitionName="processeurs">
+      <roleInCsGraph xsi:type="ecore:EReference" href="tp4.ecore#//Calculateur/processeurs"/>
+      <targetReference href="tp4.ecore#//Calculateur/processeurs"/>
+    </edges>
+  </nodes>
+  <nodes name="Peripherique" owner="//@nodes.0">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp4.ecore#//Peripherique"/>
+    <eClass href="tp4.ecore#//Peripherique"/>
+    <labelAttribute href="tp4.ecore#//Peripherique/nature"/>
+  </nodes>
+  <nodes xsi:type="diagraph:DPointOfView" name="Nomenclature" owner="//@nodes.7" viewName="default_root">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp4.ecore#//Nomenclature"/>
+    <eClass href="tp4.ecore#//Nomenclature"/>
+    <labelAttribute href="tp4.ecore#//Nomenclature/name"/>
+    <edges xsi:type="diagraph:DLink" name="ZLocalisation" owner="//@nodes.3" target="//@nodes.5" source="//@nodes.3">
+      <roleInCsGraph xsi:type="ecore:EClass" href="tp4.ecore#//ZLocalisation"/>
+      <targetReference href="tp4.ecore#//ZLocalisation/localisation"/>
+      <eClass href="tp4.ecore#//ZLocalisation"/>
+      <labelAttribute href="tp4.ecore#//ZLocalisation/cordZ"/>
+    </edges>
+    <navs>localisation_root</navs>
+  </nodes>
+  <nodes name="Famille" owner="//@nodes.7">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp4.ecore#//Famille"/>
+    <eClass href="tp4.ecore#//Famille"/>
+    <labelAttribute href="tp4.ecore#//Famille/nom"/>
+    <edges xsi:type="diagraph:DPartitioningNestingEdge" name="docus" owner="//@nodes.4" target="//@nodes.6" source="//@nodes.4" partitionName="docus">
+      <roleInCsGraph xsi:type="ecore:EReference" href="tp4.ecore#//Famille/docus"/>
+      <targetReference href="tp4.ecore#//Famille/docus"/>
+    </edges>
+  </nodes>
+  <nodes name="Localisation" owner="//@nodes.0">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp4.ecore#//Localisation"/>
+    <eClass href="tp4.ecore#//Localisation"/>
+    <labelAttribute href="tp4.ecore#//Localisation/coteY"/>
+  </nodes>
+  <nodes name="Documentation" owner="//@nodes.4">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp4.ecore#//Documentation"/>
+    <eClass href="tp4.ecore#//Documentation"/>
+    <labelAttribute href="tp4.ecore#//Documentation/description"/>
+  </nodes>
+  <nodes name="VueDocumentation" owner="//@nodes.0">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp4.ecore#//VueDocumentation"/>
+    <eClass href="tp4.ecore#//VueDocumentation"/>
+    <labelAttribute href="tp4.ecore#//VueDocumentation/name"/>
+    <edges xsi:type="diagraph:DPartitioningNestingEdge" name="familles" owner="//@nodes.7" target="//@nodes.4" source="//@nodes.7" partitionName="familles">
+      <roleInCsGraph xsi:type="ecore:EReference" href="tp4.ecore#//VueDocumentation/familles"/>
+      <targetReference href="tp4.ecore#//VueDocumentation/familles"/>
+    </edges>
+    <edges xsi:type="diagraph:DPartitioningNestingEdge" name="nomenclatures" owner="//@nodes.7" target="//@nodes.3" source="//@nodes.7" partitionName="nomenclatures">
+      <roleInCsGraph xsi:type="ecore:EReference" href="tp4.ecore#//VueDocumentation/nomenclatures"/>
+      <targetReference href="tp4.ecore#//VueDocumentation/nomenclatures"/>
+    </edges>
+  </nodes>
+  <nodes name="Processeur" owner="//@nodes.1">
+    <roleInCsGraph xsi:type="ecore:EClass" href="tp4.ecore#//Processeur"/>
+    <eClass href="tp4.ecore#//Processeur"/>
+    <labelAttribute href="tp4.ecore#//ElementEmbarque/name"/>
+    <edges xsi:type="diagraph:DLink" name="Trace" owner="//@nodes.8" target="//@nodes.3" source="//@nodes.8">
+      <roleInCsGraph xsi:type="ecore:EClass" href="tp4.ecore#//Trace"/>
+      <targetReference href="tp4.ecore#//Trace/t_nomenclature"/>
+      <eClass href="tp4.ecore#//Trace"/>
+      <labelAttribute href="tp4.ecore#//Trace/date_heure"/>
+    </edges>
+    <edges xsi:type="diagraph:DReference" name="_famille" target="//@nodes.4" source="//@nodes.8">
+      <roleInCsGraph xsi:type="ecore:EReference" href="tp4.ecore#//Processeur/_famille"/>
+      <targetReference href="tp4.ecore#//Processeur/_famille"/>
+    </edges>
+  </nodes>
+</diagraph:DGraph>

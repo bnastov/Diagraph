@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diastyle:DStyle xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagraph="http://isoe-2012-diagraph-dsml" xmlns:diastyle="http://isoe-2012-diastyle-dsml">
+  <styles xsi:type="diastyle:DNodeStyle" name="default" icon="default" shape="roundedRectangle" shapeData="" sizeX="20" sizeY="20" radius="5">
+    <topologicBridges name="Infrastructure.default">
+      <dGraphElement xsi:type="diagraph:DPointOfView" href="tp4_default_root.diagraph#//@nodes.0"/>
+    </topologicBridges>
+    <topologicBridges name="Nomenclature.default">
+      <dGraphElement xsi:type="diagraph:DPointOfView" href="tp4_default_root.diagraph#//@nodes.3"/>
+    </topologicBridges>
+    <topologicBridges name="VueDocumentation.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="tp4_default_root.diagraph#//@nodes.7"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DEdgeStyle" name="default" color="black" icon="default" arrowDirection="left" arrowSize="5">
+    <topologicBridges name="ZLocalisation.default">
+      <dGraphElement xsi:type="diagraph:DLink" href="tp4_default_root.diagraph#//@nodes.3/@edges.0"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNestingEdgeStyle" name="default"/>
+  <styles xsi:type="diastyle:DNodeStyle" name="n1" color="orange" icon="default" layout="vertical" shape="roundedRectangle" shapeData="" sizeX="20" sizeY="20" radius="5">
+    <topologicBridges name="Calculateur.n1">
+      <dGraphElement xsi:type="diagraph:DNode" href="tp4_default_root.diagraph#//@nodes.1"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNestingEdgeStyle" name="p1" color="yellow">
+    <topologicBridges name="processeurs.p1">
+      <dGraphElement xsi:type="diagraph:DPartitioningNestingEdge" href="tp4_default_root.diagraph#//@nodes.1/@edges.1"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNodeStyle" name="n2" color="green" icon="default" shape="roundedRectangle" shapeData="" sizeX="20" sizeY="20" radius="5">
+    <topologicBridges name="Famille.n2">
+      <dGraphElement xsi:type="diagraph:DNode" href="tp4_default_root.diagraph#//@nodes.4"/>
+    </topologicBridges>
+    <topologicBridges name="Processeur.n2">
+      <dGraphElement xsi:type="diagraph:DNode" href="tp4_default_root.diagraph#//@nodes.8"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DEdgeStyle" name="e1" color="red" lineWidth="3" icon="default" arrowDirection="left" arrowSize="5">
+    <topologicBridges name="Interface.e1">
+      <dGraphElement xsi:type="diagraph:DLink" href="tp4_default_root.diagraph#//@nodes.1/@edges.0"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNodeStyle" name="n3" color="lightBlue" icon="default" shape="custom" shapeData="" sizeX="40" sizeY="40" radius="5">
+    <topologicBridges name="Peripherique.n3">
+      <dGraphElement xsi:type="diagraph:DNode" href="tp4_default_root.diagraph#//@nodes.2"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DEdgeStyle" name="e2" color="darkBlue" parent="//@styles.6" parentName="e1" icon="default" arrowDirection="left" arrowSize="5">
+    <topologicBridges name="Trace.e2">
+      <dGraphElement xsi:type="diagraph:DLink" href="tp4_default_root.diagraph#//@nodes.8/@edges.0"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNodeStyle" name="n4" color="cyan" parent="//@styles.3" parentName="n1" icon="default" shape="roundedRectangle" shapeData="" sizeX="20" sizeY="20" radius="5">
+    <topologicBridges name="Localisation.n4">
+      <dGraphElement xsi:type="diagraph:DNode" href="tp4_default_root.diagraph#//@nodes.5"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNestingEdgeStyle" name="p2" color="gray">
+    <topologicBridges name="familles.p2">
+      <dGraphElement xsi:type="diagraph:DPartitioningNestingEdge" href="tp4_default_root.diagraph#//@nodes.7/@edges.0"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNestingEdgeStyle" name="p3" color="lightGray">
+    <topologicBridges name="nomenclatures.p3">
+      <dGraphElement xsi:type="diagraph:DPartitioningNestingEdge" href="tp4_default_root.diagraph#//@nodes.7/@edges.1"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DEdgeStyle" name="e3" color="orange" parent="//@styles.6" parentName="e1" icon="default" arrowDirection="left" arrowSize="5">
+    <topologicBridges name="_famille.e3">
+      <dGraphElement xsi:type="diagraph:DReference" href="tp4_default_root.diagraph#//@nodes.8/@edges.1"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNodeStyle" name="n5" color="darkGreen" icon="default" shape="roundedRectangle" shapeData="" sizeX="20" sizeY="20" radius="5">
+    <topologicBridges name="Documentation.n5">
+      <dGraphElement xsi:type="diagraph:DNode" href="tp4_default_root.diagraph#//@nodes.6"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNestingEdgeStyle" name="p4" color="lightGreen">
+    <topologicBridges name="docus.p4">
+      <dGraphElement xsi:type="diagraph:DPartitioningNestingEdge" href="tp4_default_root.diagraph#//@nodes.4/@edges.0"/>
+    </topologicBridges>
+  </styles>
+  <dGraph href="tp4_default_root.diagraph#/"/>
+</diastyle:DStyle>

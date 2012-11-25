@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diastyle:DStyle xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagraph="http://isoe-2012-diagraph-dsml" xmlns:diastyle="http://isoe-2012-diastyle-dsml">
+  <styles xsi:type="diastyle:DNodeStyle" name="default" icon="default" shape="roundedRectangle" shapeData="" sizeX="20" sizeY="20" radius="5">
+    <topologicBridges name="LivreRecettes.default">
+      <dGraphElement xsi:type="diagraph:DPointOfView" href="tp3_default_root.diagraph#//@nodes.0"/>
+    </topologicBridges>
+    <topologicBridges name="Vin.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="tp3_default_root.diagraph#//@nodes.3"/>
+    </topologicBridges>
+    <topologicBridges name="Bouteille.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="tp3_default_root.diagraph#//@nodes.5"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DEdgeStyle" name="default" color="black" icon="default" arrowDirection="left" arrowSize="5">
+    <topologicBridges name="origineRegionale.default">
+      <dGraphElement xsi:type="diagraph:DReference" href="tp3_default_root.diagraph#//@nodes.1/@edges.1"/>
+    </topologicBridges>
+    <topologicBridges name="_vin.default">
+      <dGraphElement xsi:type="diagraph:DReference" href="tp3_default_root.diagraph#//@nodes.5/@edges.0"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNestingEdgeStyle" name="default"/>
+  <styles xsi:type="diastyle:DNodeStyle" name="n3" color="lightGreen" parent="//@styles.5" parentName="n2" icon="default" shape="ellipse" shapeData="" sizeX="80" sizeY="80" radius="5">
+    <topologicBridges name="Localisation.n3">
+      <dGraphElement xsi:type="diagraph:DNode" href="tp3_default_root.diagraph#//@nodes.4"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNestingEdgeStyle" name="p1" color="lightBlue">
+    <topologicBridges name="vins.p1">
+      <dGraphElement xsi:type="diagraph:DPartitioningNestingEdge" href="tp3_default_root.diagraph#//@nodes.1/@edges.2"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNodeStyle" name="n2" color="red" icon="default" layout="vertical" shape="roundedRectangle" shapeData="" radius="5"/>
+  <styles xsi:type="diastyle:DNodeStyle" name="n6" color="yellow" icon="default" shape="roundedRectangle" shapeData="" sizeX="20" sizeY="20" radius="5"/>
+  <styles xsi:type="diastyle:DEdgeStyle" name="e1" color="darkGreen" lineWidth="3" icon="default" arrowDirection="left" arrowSize="5">
+    <topologicBridges name="Compose.e1">
+      <dGraphElement xsi:type="diagraph:DLink" href="tp3_default_root.diagraph#//@nodes.1/@edges.0"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNodeStyle" name="n1" color="orange" icon="default" shape="roundedRectangle" shapeData="" sizeX="60" sizeY="60" radius="5">
+    <topologicBridges name="Recette.n1">
+      <dGraphElement xsi:type="diagraph:DPointOfView" href="tp3_default_root.diagraph#//@nodes.1"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNodeStyle" name="n5" color="yellow" icon="default" shape="custom" shapeData="0,0;40,0;40,30;30,30;30,40;40,30;30,40;0,40" sizeX="40" sizeY="40" radius="5">
+    <topologicBridges name="Ingredient.n5">
+      <dGraphElement xsi:type="diagraph:DNode" href="tp3_default_root.diagraph#//@nodes.2"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNodeStyle" name="n4" color="lightBlue" icon="default" shape="custom" shapeData="20,0;40,40;0,40;20,0" sizeX="40" sizeY="40" radius="5"/>
+  <dGraph href="tp3_default_root.diagraph#/"/>
+</diastyle:DStyle>
